@@ -1,0 +1,44 @@
+.rate-list{
+  background:#fff;
+  margin:30rpx 30rpx 0;
+  color:#333;
+  font-size:26rpx;
+}
+.rate-title{
+  background:#ffac4c!important;
+  color:#fff!important;
+  font-size: 30rpx!important;
+}
+/* .rate-item,.rate-year{
+  display: inline-block;
+  text-align: center;
+} */
+.rate-title text{
+  display: inline-block;
+  width:50%;
+  text-align: center;
+  height:90rpx;
+  line-height:90rpx;
+}
+.rate-content text{
+ display: inline-block;
+  width:49%;
+  text-align: center;
+  height:90rpx;
+  line-height:90rpx;
+}
+.rate-content{
+  border-bottom: 1rpx solid #dfe3e6;
+}
+.time-rate .rate-content text:nth-child(1){
+  border-right: 1rpx solid #dfe3e6;
+}
+.rate-table{
+  font-size:26rpx;
+  color:#999999;
+  text-align: center;
+ 
+}
+.table-notice{
+ margin-top:46rpx;
+}

@@ -1,0 +1,4 @@
+<view class="account">
+  <image src="/images/count.png"></image>
+</view>
+<view class="intro">理财计算器是专业计算投资理财的计算器。定活切换，存款年限自动匹配实时利率；网贷计算，P2P红包抵扣管理一起搞定，是您投资理财的必备工具。</view>

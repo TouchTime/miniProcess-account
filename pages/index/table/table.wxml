@@ -1,0 +1,44 @@
+<view class="container-rate">
+  <view class="rate-list">
+    <view class="rate-title">
+      <text>利率项目</text>
+      <text>年利率(%)</text>
+    </view>
+    <view class="time-rate">
+      <view class="rate-content">
+        <text>活期存款</text>
+        <text>0.35+浮动</text>
+      </view>
+      <view class="rate-content">
+        <text>3个月定期存款</text>
+        <text>1.10+浮动</text>
+      </view>
+      <view class="rate-content">
+        <text>6个月定期存款</text>
+        <text>1.30+浮动</text>
+      </view>
+      <view class="rate-content">
+        <text>1年定期存款</text>
+        <text>1.50+浮动</text>
+      </view>
+      <view class="rate-content">
+        <text>2年定期存款</text>
+        <text>2.10+浮动</text>
+      </view>
+      <view class="rate-content">
+        <text>3年定期存款</text>
+        <text>2.75+浮动</text>
+      </view>
+      <view class="rate-content">
+        <text>5年定期存款</text>
+        <text>2.75+浮动</text>
+      </view>
+    </view>
+  </view>
+  <view class="table-notice">
+   <view class="rate-table">以上为央行2018年的存款基准利率，</view>
+   <view class="rate-table">各家银行可在此基础上浮动调整，</view>
+    <view class="rate-table">您可在计算时手动输入指定银行的利率</view>
+  </view>
+ 
+</view>

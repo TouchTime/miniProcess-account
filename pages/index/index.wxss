@@ -1,0 +1,314 @@
+.title {
+  background: #2d84f2;
+  padding: 14rpx 0;
+  text-align: center;
+}
+
+.bank-title {
+  width: 200rpx;
+  height: 56rpx;
+  padding: 8rpx 50rpx;
+  border: 1rpx solid #fff;
+  /* background:#fff; */
+  border-radius: 10rpx 0 0 10rpx;
+  line-height: 56rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+
+.p-title {
+  width: 200rpx;
+  height: 56rpx;
+  padding: 8rpx 50rpx;
+  border: 1rpx solid #fff;
+  /* background:#fff; */
+  border-radius: 0 10rpx 10rpx 0;
+  line-height: 56rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+
+.active {
+  color: #2d84f2 !important;
+  background: #fff !important;
+}
+
+.account-data {
+  background: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.accrual {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.interest-table {
+  font-size: 28rpx;
+  color: #2d84f2;
+  height: 44rpx;
+  line-height: 44rpx;
+  display: inline-block;
+  border: 1rpx solid #2d84f2;
+  border-radius: 35rpx;
+  text-align: center;
+  width: 120rpx;
+  position: absolute;
+  right: 30rpx;
+}
+
+.account-interest {
+  padding-top: 40rpx;
+}
+
+.true-money {
+  font-size: 60rpx;
+  color: #ff7b33;
+  margin-top: 10rpx;
+  margin-bottom: 14rpx;
+  font-weight: 500;
+}
+
+.interest-money {
+  color: #333;
+  font-size: 42rpx;
+  padding: 20rpx 0 34rpx;
+  font-weight: 500;
+}
+
+.list-titles {
+  color: #999;
+  font-size: 26rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  padding-left: 30rpx;
+}
+
+.msg-lists {
+  background: #fff;
+}
+
+.all-data {
+  margin-left: 30rpx;
+}
+
+.custody {
+  color: #333;
+  font-size: 28rpx;
+}
+
+.single-sum {
+  border-bottom: 1rpx solid #dfe3e6;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.single-input{
+  color: #b2b2b2;
+  font-size: 28rpx;
+  display: inline-block;
+  float: right;
+  text-align: right;
+  margin-right: 30rpx;
+  margin-top: 26rpx;
+}
+
+.select-date {
+  display: inline-block;
+}
+
+.picker, picker {
+  display: inline-block;
+}
+
+.select-date {
+  float: right;
+  margin-right: 30rpx;
+  line-height: 100rpx;
+  font-size: 26rpx;
+}
+
+.select-current {
+  width: 80rpx;
+  height: 60rpx;
+  padding: 8rpx 16rpx;
+  border: 1rpx solid #4697fb;
+  border-radius: 10rpx 0 0 10rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  color: #4697fb;
+}
+
+.select-currents {
+  width: 80rpx;
+  height: 60rpx;
+  padding: 8rpx 16rpx;
+  border: 1rpx solid #4697fb;
+  border-radius: 0 10rpx 10rpx 0;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  color: #4697fb;
+}
+
+.actives {
+  background: #4697fb;
+  color: #fff;
+}
+
+picker {
+  float: right;
+  margin-right: 30rpx;
+}
+
+.picker text {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.location {
+  display: inline-block;
+  width: 14rpx;
+  height: 25rpx;
+  padding-left: 15rpx;
+}
+
+.custody-data {
+  display: inline-block;
+  color: #333;
+  float: right;
+  margin-right: 30rpx;
+  font-size: 28rpx;
+  clear: both;
+}
+
+/* p2p */
+
+.p-tag {
+  background: #fff;
+  /* border-bottom: 1rpx solid #dfe3e6; */
+  display: flex;
+  flex-direction: row;
+}
+
+.nature-rate {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  text-align: center;
+  padding: 40rpx 0 30rpx;
+}
+
+.percent {
+  font-size: 26rpx;
+  color: #333;
+}
+
+.percent-num {
+  font-size: 42rpx;
+  color: #333;
+  font-weight: 500;
+  margin-top: 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.percent-get {
+  font-size: 50rpx;
+  color: #ff7b33;
+  font-weight: 500;
+  margin-top: 12rpx;
+}
+
+.percent-href {
+  font-size: 26rpx;
+  color: #2d84f2;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-top: 18rpx;
+}
+.inputs{
+  border: 1rpx solid #b3b3b3;
+  width:140rpx;
+  height: 56rpx;
+  line-height:60rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 28rpx;
+  position:absolute;
+  right:195rpx;
+  top:20rpx;
+}
+.single-percent{
+  font-size: 28rpx;
+  color:#333;
+  line-height:100rpx;
+  position:absolute;
+  right:160rpx;
+}
+.single-style{
+  position:relative;
+  clear: both;
+}
+.single-style .select-date{
+  right:30rpx;
+}
+.select{
+  display: inline-block;
+  width:26rpx;
+  height:26rpx;
+  vertical-align:middle;
+
+}
+.noChose{
+  display: inline-block;
+  width:26rpx;
+  height:26rpx;
+  border-radius: 50%;
+  border:1rpx solid #b2b2b2;
+  vertical-align:middle;
+
+  
+}
+.circle{
+  display: inline-block;
+  margin-left:110rpx;
+  color:#737373;
+  font-size: 28rpx;
+}
+.day{
+  margin-left:10rpx;
+  vertical-align:middle;
+
+}
+.single-sum{
+  clear: both;
+}
+.single-left{
+ display: inline-block;
+ width:50%;
+}
+.reward{
+  display: inline-block;
+  width:180rpx;
+  height:58rpx;
+  font-size: 26rpx;
+  color:#b3b3b3;
+  border: 1rpx solid #b3b3b3;
+  border-radius: 10rpx;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+.p-way{
+  color:#b3b3b3;
+  font-size: 28rpx;
+}
+.activeColor{
+  color:#333!important;
+}
+.annualRate{
+  border:none!important;
+}

@@ -1,0 +1,18 @@
+<view class="more">
+  <view class="more-list" bindtap="skipAbout">
+    <view class="more-about">关于理财计算器</view>
+    <image src="/images/href.png" class="location"></image>
+  </view>
+   <view class="line"></view>
+  <view class="more-list book" bindtap="network">
+   <button open-type="share">
+    <view class="more-about">推荐理财计算器给好友</view>
+    <image src="/images/href.png" class="location"></image>
+    </button>
+  </view> 
+   <!-- <view class="more-list book" bindtap="network">
+    <view class="more-about">网贷记账本</view>
+    <image src="/images/network.png" class="account"></image>
+    <image src="/images/href.png" class="location"></image>
+  </view>  -->
+</view>

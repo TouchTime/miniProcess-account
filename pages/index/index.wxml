@@ -1,0 +1,162 @@
+<view class="container-top">
+  <view class="title">
+    <text class="bank-title {{color?'':'active'}}" bindtap="colorChange" data-id="银行理财">银行理财</text>
+    <text class="p-title {{colors?'':'active'}}" bindtap="colorChange" data-id="P2P理财">P2P理财</text>
+  </view>
+  <block wx:if="{{one}}">
+    <view class="account-data">
+      <view class="account-interest">
+        <text class="accrual">利息(元)</text>
+        <text class="interest-table" bindtap="skip">利率表</text>
+      </view>
+      <view class="true-money">{{trueMoney}}</view>
+      <view class="accrual">本息(元)</view>
+      <view class="interest-money">{{interestMoney}}</view>
+    </view>
+    <view class="list-titles">请输入存款信息</view>
+    <view class="msg-lists">
+      <view class="all-data">
+        <view class="single-sum">
+          <text class="custody">存款金额(元)</text>
+          <input type="digit" placeholder="请输入金额" class="single-input {{black?'':'activeColor'}}" value="{{money}}" bindchange="moneyChange" maxlength='8' bindinput="bindReplaceInput"></input>
+        </view>
+        <view class="single-sum single-type">
+          <text class="custody">存款类型</text>
+          <view class="select-date">
+            <text class="select-current {{color1?'':'actives'}}" bindtap="colorsChange" data-id="活期">活期</text>
+            <text class="select-currents {{color2?'':'actives'}}" bindtap="colorsChange" data-id="定期">定期</text>
+          </view>
+        </view>
+        <view class="single-sum single-deadline">
+          <text class="custody">存款期限</text>
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+              <text>{{array[index]}}</text>
+              <image src="/images/href.png" class="location" />
+            </view>
+          </picker>
+        </view>
+        <view class="single-sum annualRate">
+          <text class="custody">年利率(%)</text>
+          <input type="digit" class="single-input custody-data" value="{{custodyData}}" bindchange="moneyChanges"></input>
+          <!-- <text class="custody-data">{{custodyData}}</text> -->
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="p-data">
+      <view class="p-tag">
+        <view class="nature-rate">
+          <text class="percent">实际利率(%)</text>
+          <view class="percent-num">{{percentNum}}</view>
+        </view>
+        <view class="nature-rate">
+          <text class="percent">预计收益(元)</text>
+          <view class="percent-get">{{percentGet}}</view>
+        </view>
+        <view class="nature-rate">
+          <text class="percent">还款明细</text>
+          <view class="percent-href" bindtap="check">查看</view>
+        </view>
+      </view>
+      <view class="list-titles">请输入理财信息</view>
+      <view class="msg-lists">
+        <view class="all-data">
+          <view class="single-sum">
+            <text class="custody">理财金额(元)</text>
+            <input type="digit" placeholder="请输入实际本金" class="single-input {{blacks?'':'activeColor'}}" value="{{pMoney}}" bindchange="pChange" maxlength='8' bindinput="bindReplaceInputs" confirm-hold="true"></input>
+          </view>
+          <view class="single-sum">
+            <text class="custody">起息日期</text>
+            <picker mode="date" value="{{dates}}" start="2001-09-01" end="3020-09-01" bindchange="bindDateChange">
+              <view class="picker">
+                <text>{{dates}}</text>
+                <image src="/images/href.png" class="location" />
+              </view>
+            </picker>
+          </view>
+          <view class="single-sum single-type single-style">
+            <text class="custody">理财期限</text>
+            <input type="number" placeholder="输入" class="inputs" value="{{pyear}}" bindchange="yearChange" />
+            <view class="select-date">
+              <text class="select-current {{color3?'':'actives'}}" bindtap="colorsChange" data-id="月">月</text>
+              <text class="select-currents {{color4?'':'actives'}}" bindtap="colorsChange" data-id="日">日</text>
+            </view>
+          </view>
+          <view class="single-sum single-type single-style">
+            <text class="custody">利率</text>
+            <view class="circle">
+              <block wx:if="{{choose}}">
+                <view data-text="1" bindtap="changeCircle">
+                  <text class="noChose"></text>
+                  <text class="day">360天制</text>
+                </view>
+              </block>
+              <block wx:else>
+                <view bindtap="changeCircle" data-text="2">
+                  <image src="/images/select.png" class="select"></image>
+                  <text class="day">360天制</text>
+                </view>
+              </block>
+            </view>
+            <input type="digit" placeholder="输入" class="inputs" value="{{prate}}" bindchange="rateChange" />
+            <text class="single-percent">%</text>
+            <view class="select-date">
+              <text class="select-current {{color5?'':'actives'}}" bindtap="colorsChange" data-id="年">年</text>
+              <text class="select-currents {{color6?'':'actives'}}" bindtap="colorsChange" data-id="日6">日</text>
+            </view>
+          </view>
+          <block wx:if="{{types}}">
+            <view class="single-sum single-deadline">
+              <text class="custody">还款方式</text>
+              <picker bindchange="bindPickerChanges" value="{{index2}}" range="{{arrays}}" data-view="{{arrays[index2]}}" class="p-way">
+                <view class="picker">
+                  <text>{{arrays[index2]}}</text>
+                  <image src="/images/href.png" class="location" />
+                </view>
+              </picker>
+            </view>
+          </block>
+          <block wx:else>
+            <view class="single-sum single-deadline">
+              <text class="custody">还款方式</text>
+              <picker bindchange="bindPickerChange1" value="{{index3}}" range="{{array1}}" data-view="{{array1[index3]}}" class="p-way">
+                <view class="picker">
+                  <text>{{array1[index3]}}</text>
+                  <image src="/images/href.png" class="location" />
+                </view>
+              </picker>
+            </view>
+          </block>
+          <view class="single-sum single-deadline" wx:if="{{show}}">
+            <text class="custody">付息日</text>
+            <picker bindchange="bindgiveMoney" value="{{index1}}" range="{{Money}}" data-view="{{Money[index1]}}">
+              <view class="picker">
+                <text>{{Money[index1]}}日</text>
+                <image src="/images/href.png" class="location" />
+              </view>
+            </picker>
+          </view>
+          <view class="single-sum">
+            <view class="single-left">
+              <text class="custody">返现奖励</text>
+              <input type="number" placeholder="选填" class="reward  {{black1?'':'activeColor'}}" value="{{reward}}" bindchange="rewardTap" bindinput="bindReplaceInput1"></input>
+            </view>
+            <view class="single-left">
+              <text class="custody">抵扣奖励</text>
+              <input type="number" placeholder="选填" class="reward  {{black2?'':'activeColor'}}" value="{{deduction}}" bindchange="deductionTap" bindinput="bindReplaceInput2"></input>
+            </view>
+          </view>
+          <view class="single-sum annualRate">
+            <text class="custody">管理费(%)</text>
+            <input type="digit" placeholder="管理费选填" class="single-input {{black3?'':'activeColor'}}" value="{{manage}}" bindchange="manageTap" bindinput="bindReplaceInput3"></input>
+          </view>
+        </view>
+      </view>
+
+
+    </view>
+  </block>
+
+</view>
