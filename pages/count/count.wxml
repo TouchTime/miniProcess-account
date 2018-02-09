@@ -1,0 +1,50 @@
+<!-- 跳出授权弹窗，显示暂无资产数据 -->
+<block wx:if="{{ authorize }}">
+  <view class="count_bg">
+    <image src="/images/count_nodata.png" class="records"></image>
+    <text class="count_data">暂无资产数据</text>
+    <view class="note-btn" bindtap="onOrder">
+      <text class="note">记一笔</text>
+    </view>
+  </view>
+</block>
+
+
+<!-- 授权允许，暂无回款数据 -->
+<block wx:else>
+  <block wx:if="{{dataShow}}">
+    <view class="count_bg">
+      <image src="/images/count_nodata.png" class="records"></image>
+      <text class="count_data">暂无回款数据</text>
+      <view class="note-btn" bindtap="onOrder">
+        <text class="note">记一笔</text>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="container">
+      <view class="whiteBg"></view>
+      <canvas canvas-id="pieCanvas" class="canvas"></canvas>
+      <view class="count-plateform">
+        <text class="in-plateform">在投平台：<text class="in-num">5个</text></text>
+        <text class="in-plateform in-percent">在投年化：<text class="in-num ">12%</text></text>
+      </view>
+      <view class="count-btn" bindtap="onOrder">
+        <text>记一笔</text>
+      </view>
+      <view class="count-list">
+        <view class="count-title">
+          <text class="plateform">平台</text>
+          <text class="count-money">投资总额</text>
+        </view>
+        <block wx:for="{{countArray}}" wx:key="unique">
+          <view class="count-store" bindtap="locationHref" data-id="{{item.id}}">
+            <text>{{item.name}}<text class="count-num">({{item.num}}%)</text></text>
+            <image class="arrow" src="/images/arrow.png"></image>
+            <text class="count-money">{{item.money}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</block>

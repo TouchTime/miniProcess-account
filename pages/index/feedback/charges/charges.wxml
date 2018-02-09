@@ -1,0 +1,22 @@
+<!-- <view class="problem-container"> -->
+<!-- <block wx:for="{{}}">   -->
+<!-- <view class="list" bindtap="binddetail">
+            <text>1、P2P记账：常用的还款方式？</text>
+            <image src="/images/arrow.png" class="problem-right"></image>
+        </view>
+         <view class="list">
+            <text>2、P2P记账： 常用的还款方式</text>
+            <image src="/images/arrow.png"  class="problem-right"></image>
+        </view>
+        <view class="list">
+            <text>3、P2P记账： 常用的还款方式</text>
+            <image src="/images/arrow.png"  class="problem-right"></image>
+        </view> -->
+<!-- </block>   -->
+<!-- </view> -->
+<import src="/pages/index/problem-template/problem-template.wxml" />
+<view class="problem-container">
+  <block wx:for="{{restData}}" wx:key="unique" wx:for-item="item">
+    <template is="problemItem" data="{{...item}}" />
+  </block>
+</view>

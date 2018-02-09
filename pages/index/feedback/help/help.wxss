@@ -1,0 +1,36 @@
+/* .list text{
+  font-size:30rpx;
+  color:#333;
+}
+.problem-right{
+  width:12rpx;
+  height:22rpx;
+  padding:36rpx 0;
+  position:absolute;
+  right:30rpx;
+
+}
+.list{
+  display:flex;
+  flex-direction:row;
+  position: relative;
+  margin-left:30rpx;
+  font-size: 30rpx;
+  color:#333;
+  height:100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #e3e4e6;
+}
+.problem-container{
+  background:#fff;
+  border-top: 1rpx solid #e3e4e6;
+} */
+.problem-container{
+  background:#fff;
+  /* border-top: 1rpx solid #e3e4e6; */
+}
+page{
+ border-top:1rpx solid #cacbcc;
+
+}
+@import "/pages/index/problem-template/problem-template.wxss";

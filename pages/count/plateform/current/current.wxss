@@ -1,0 +1,387 @@
+.mark image{
+  width:23rpx;
+  height:23rpx;
+  /* vertical-align:middle; */
+
+}
+.container{
+  background:#26231d;
+  color:#927a58;
+}
+.modify{
+  width:110rpx;
+  height:48rpx;
+  float:right;
+  margin-right:50rpx;
+  margin-top:40rpx;
+
+}
+.list{
+  display: flex;
+  direction: row;
+  margin-top:66rpx;
+  /* text-align: center; */
+  font-size: 24rpx;
+}
+.getBack{
+  width:33%;
+}
+.interest{
+ padding:88rpx 50rpx 0;
+}
+.interested{
+  font-size: 24rpx;
+}
+.interestList{
+  padding-top:28rpx;
+}
+.interestNum{
+  font-size:66rpx;
+  color:#cea66c;
+}
+.tag{
+  color:#cea66c;
+  font-size: 22rpx;
+  border:1rpx solid #cea66c;
+  padding:5rpx 10rpx;
+  border-radius: 2rpx;
+  float:right;
+  margin-top:17rpx;
+}
+.backNum{
+  font-size: 32rpx;
+  color:#cea66c;
+  padding-top:20rpx;
+}
+.getBack{
+  padding-left:50rpx;
+}
+.backNums{
+   font-size: 32rpx;
+  color:#cea66c;
+  padding-top:16rpx;
+}
+.mark{
+  margin-top:48rpx;
+  text-align: center;
+  font-size: 22rpx;
+  padding-bottom:42rpx;
+}
+.mark text{
+  padding-left:10rpx;
+}
+.detail{
+  background:#fff;
+  width:100vw;
+}
+.leftDetail{
+  display: inline-block;
+  font-size: 26rpx;
+  width:50%;
+ padding-top:16rpx;
+ padding-bottom:50rpx;
+}
+.single-data{
+  color:#999;
+}
+.single-detail{
+  color:#333;
+  padding-left:30rpx;
+}
+.single{
+  padding-left:30rpx;
+  padding-top:32rpx;
+}
+.details{
+  padding-left:44rpx;
+}
+.day{
+  padding-left:36rpx;
+}
+.reimburse{
+  font-size: 30rpx;
+  color:#333;
+  padding-left:30rpx;
+  margin:24rpx 0;
+}
+.getOrder{
+  width:99rpx;
+  height:74rpx;
+  margin:45rpx 58rpx 0;
+   padding-left: 210rpx; 
+}
+.reimburse-list{
+  background:#fff;
+  /* padding-top:45rpx; */
+  padding-bottom:48rpx;  
+}
+.green{
+  width:92rpx;
+  height:40rpx;
+  margin:45rpx 62rpx 0;
+}
+.reimbure-money{
+  display: inline-block;
+}
+.top{
+  font-size: 20rpx;
+  color:#fff;
+  background:#b3b3b3;
+  border-radius: 50%;
+  border:6rpx solid #e8e8e8;
+  width:32rpx;
+  height:32rpx;
+  display: inline-block;
+  text-align: center;
+  line-height: 32rpx;
+}
+.top{
+  font-size: 20rpx;
+  color:#fff;
+  background:#b3b3b3;
+  border-radius: 50%;
+  border:6rpx solid #e8e8e8;
+  width:32rpx;
+  height:32rpx;
+  display: inline-block;
+  text-align: center;
+  line-height: 32rpx;
+   position:absolute;
+  top:60rpx; 
+
+}
+.second{
+  font-size: 20rpx;
+  color:#fff;
+  background:#b39365;
+  border-radius: 50%;
+  border:6rpx solid #f0e6d9;
+  width:32rpx;
+  height:32rpx;
+  display: inline-block;
+  text-align: center;
+  line-height: 32rpx;
+}
+.time{
+  color:#b2b2b2;
+  font-size: 28rpx;
+  padding-left:18rpx;
+   position: absolute;
+  left:40rpx;
+  top:64rpx; 
+
+}
+.times{
+  color:#333;
+  font-size: 28rpx;
+  padding-left:18rpx;
+
+}
+.rei-interest{
+  font-size: 24rpx;
+  color:#b2b2b2;
+}
+.rei-interest text{
+  font-weight: bold;
+}
+.rei-really{
+  color:#333;
+}
+.reimburse-tag{
+  margin-left:30rpx;
+  /* height:92rpx;
+  line-height: 92rpx; */
+  position: relative; 
+  margin-top: 30rpx;
+
+}
+.rei-interest{
+  margin-top:12rpx;
+}
+.rei-really,.rei-real{
+  padding-left:12rpx;
+}
+.line{
+ position:absolute;
+height:120rpx;
+width:2rpx;
+background:#e4c79e;
+top:-55rpx;
+left:20rpx;
+
+}
+.reimburse-tags{
+   margin-left:30rpx;
+   margin-top:50rpx;
+   position: relative; 
+}
+
+/* 弹窗 */
+.select-one{
+  color:#333;
+  font-size: 30rpx;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #e3e4e6;
+}
+.select-open{
+  background:#fff;
+  width:100%;
+  position:fixed;
+  bottom:0;
+
+}
+.select{
+  position:fixed;
+  top:0;
+  width:100%;
+
+}
+.select-no{
+  /* position:fixed; */
+  height:1000rpx;
+  background:rgba(0,0,0,.5);
+  /* z-index:99999; */
+}
+.select-cancle{
+  color:#d4aa70;
+  font-size: 30rpx;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+}
+.debt{
+  position:fixed;
+  top:0;
+  width:100%;
+}
+.debts{
+  position:fixed;
+  top:0;
+  width:100%;
+}
+.debt-pop{
+  height:100vh;
+  background:rgba(0,0,0,.5);
+}
+.debt-open{
+  width:610rpx;
+  /* height:300rpx; */
+  background:#fff;
+  border-radius: 10rpx;
+  position:fixed;
+  left:50%;
+  top:240rpx;
+  transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+}
+.debt-title{
+  color:#333;
+  font-size: 36rpx;
+  padding:50rpx 0;
+  text-align: center;
+}
+.debt .debt-input{
+  margin:0 56rpx;
+}
+.debt .debt-input input{
+  border:1rpx solid #d4aa70;
+  border-radius: 15rpx;
+  text-align: center;
+  padding:20rpx 0;
+  font-size: 34rpx;
+}
+.colorOld{
+  color:#b2b2b2;
+  font-size: 34rpx;
+}
+.debt-cancle{
+  display: inline-block;
+  width:236rpx;
+  height:80rpx;
+  line-height:80rpx;
+  color:#b2b2b2;
+  background:#e3e4e6;
+  font-size: 34rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.debt-sure{
+  display: inline-block;
+  width:236rpx;
+  height:80rpx;
+  line-height:80rpx;
+  color:#fff;
+  background:#d4aa70;
+  font-size: 34rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+}
+.debt-button{
+  margin:40rpx 56rpx;
+}
+.debts .debt-input text{
+  color:#666666;
+  font-size: 32rpx;
+   line-height:78rpx; 
+    text-align: right; 
+}
+.debts .debt-input{
+  padding-left:60rpx; 
+  height:78rpx;
+  margin-bottom:20rpx;
+
+}
+.debts .debt-input input{
+  border:1rpx solid #d4aa70;
+  border-radius: 15rpx;
+  text-align: center;
+   padding:10rpx 0; 
+  font-size: 34rpx;
+  float:right;
+margin-right:54rpx;
+clear:both;
+width:344rpx;
+
+
+}
+.debts input{
+  display:inline-block;
+
+
+}
+.debts .debt-open {
+width:612rpx;
+background:#fff;
+border-radius:10rpx;
+position:fixed;
+left:50%;
+top:240rpx;
+transform:translate(-50%,0);
+-moz-transform:translate(-50%,0);
+-webkit-transform:translate(-50%,0);
+
+}
+.debts .debt-money{
+  padding-left:56rpx;
+}
+.picker,picker{
+  display:inline-block;
+line-height:78rpx;
+float:right;
+
+}
+.picker{
+  margin-left:18rpx;
+}
+.trables{
+  transform:rotate(180deg);
+-ms-transform:rotate(180deg); 	/* IE 9 */
+-moz-transform:rotate(180deg); 	/* Firefox */
+-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+-o-transform:rotate(180deg); 	/* Opera */
+vertical-align: middle;
+}

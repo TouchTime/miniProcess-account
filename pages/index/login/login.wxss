@@ -1,0 +1,59 @@
+page{
+  background:#fff;
+  border-top:1rpx solid #cacbcc;
+}
+.login-container{
+  margin:58rpx 50rpx 0;
+  position:relative;
+}
+.login-container input{
+  font-size:30rpx;
+  color:#b2b2b2;
+}
+.fontChange{
+  font-size:34rpx!important;
+  color:#333!important;
+}
+.login-phone{
+  width:494rpx;
+}
+.login-code{
+  position:absolute;
+  right:0rpx;
+  font-size:28rpx;
+  color:#8e5b26;
+  top:38rpx;
+  padding-left: 20rpx;
+  border-left:1px solid #cacbcc;
+
+}
+.login-section{
+  border-bottom: 1px solid #cacbcc;
+  padding:33rpx 0;
+}
+.login-btn button{
+  margin-top:90rpx;
+  color:#8e5b26;
+  font-size: 28rpx;
+  font-weight: bold;
+  background:-moz-linear-gradient(#f0d4a8,#c09c6b);
+  background: linear-gradient(#f0d4a8,#c09c6b);
+  background: -o-linear-gradient(#f0d4a8,#c09c6b);
+  padding:8rpx 0;
+  border-radius: 16rpx;
+
+}
+.cover{
+ position:absolute;
+  background:transparent;
+  width:216rpx;
+  height:82rpx;
+  right:-38rpx;
+  top:-2rpx;
+}
+.hiden{
+  display: none;
+}
+.loginColor{
+  color:#b2b2b2;
+}

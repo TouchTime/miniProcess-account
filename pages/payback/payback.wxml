@@ -1,0 +1,103 @@
+<view class="pay-container">
+
+  <!-- 有数据 -->
+  <view class="time-list">
+     <text>2017-11-20</text> 
+      <text>(总额：63984.33)</text> 
+    </view>
+  <block wx:for="{{payFor}}" wx:key="unique">
+    <view class="pay-card">
+      <view class="pay-firstLine">
+        <text class="pay-store">{{item.name}}——{{item.type}}</text>
+        <text class="pay-num">(1/6)</text>
+        <block wx:if="{{item.outdata == '已到期'}}">
+          <text class="out-data" bindtap="onchange" data-out="{{item.outdata}}" data-hi="{{item.id}}">{{item.outdata}}</text>
+        </block>
+        <block wx:elif="{{item.outdata == '待收'}}">
+          <text class="in-data" bindtap="onchange" data-out="{{item.outdata}}" data-hi="{{item.id}}">{{item.outdata}}</text>
+        </block>
+        <block wx:elif="{{item.outdata == '逾期'}}">
+          <text class="overdue" bindtap="onchange" data-out="{{item.outdata}}" data-hi="{{item.id}}">{{item.outdata}}</text>
+        </block>
+        <block wx:elif="{{item.outdata == '已收'}}">
+          <image src="/images/getted.png" data-out="{{item.outdata}}" bindtap="onchange" data-hi="{{item.id}}" class="status"></image>
+        </block>
+      </view>
+      <view class="pay-secondLine">
+        <view class="principal">
+          <text>{{item.payMoney}}</text>
+          <view>应收利息</view>
+        </view>
+        <view class="pay-back">
+          <view class="receive">应收本金
+            <text class="money">{{item.receMoney}}</text>
+          </view>
+          <view class="receive pay-receive">应收总额
+            <text class="money">{{item.getMoney}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class="select" wx:if="{{list == 1}}">
+    <view class="select-no" bindtap="bindCancle"></view>
+    <view class="select-open">
+      <view class="select-one" bindtap="bindgets" data-text="已收">已收</view>
+      <view class="select-one" bindtap="bindget" data-text="已收">提前退出</view>
+      <view class="select-one" bindtap="overtime" data-text="逾期">逾期</view>
+      <view class="select-one" bindtap="transfer">债权转让</view>
+      <view class="select-one" bindtap="modify">修改</view>
+      <view class="select-cancle" bindtap="bindCancle">取消</view>
+    </view>
+  </view>
+  <view class="select" wx:elif="{{list == 2}}">
+    <view class="select-no" bindtap="bindCancle"></view>
+    <view class="select-open">
+      <view class="select-one" bindtap="bindget" data-text="待收">待收</view>
+      <view class="select-one" bindtap="overtime" data-text="逾期">逾期</view>
+      <view class="select-cancle" bindtap="bindCancle">取消</view>
+    </view>
+  </view>
+  <view class="select" wx:elif="{{list == 3}}">
+    <view class="select-no" bindtap="bindCancle"></view>
+    <view class="select-open">
+      <view class="select-one" bindtap="bindgets" data-text="待收">待收</view>
+      <view class="select-one" bindtap="bindget" data-text="已收">已收</view>
+      <view class="select-cancle" bindtap="bindCancle">取消</view>
+    </view>
+  </view>
+  <!-- 债权转让弹窗 -->
+  <view class="debt" wx:if="{{debt}}">
+    <view class="debt-pop"></view>
+    <view class="debt-open">
+      <view class="debt-title">债权转让</view>
+      <view class="debt-input" >
+        <input type="digit" placeholder="请输入转让金额" class="{{colors?'colorOld':'fontChange'}}" bindinput="colorChange" value="{{num}}"  maxlength="11"/>
+      </view>
+      <view class="debt-button">
+        <text class="debt-cancle" bindtap="bindCancles">取消</text>
+        <text class="debt-sure" bindtap="bindSure">确定</text>
+      </view>
+    </view>
+  </view>
+
+
+
+  <!-- 无数据 -->
+    <!-- <view class="section">
+    <picker mode="date" value="{{date}}" start="2000-09-01" end="3017-09-01" bindchange="bindDateChange">
+      <view class="picker">
+        <text class="all-picker">全部回款</text>
+        <text class="time">{{date}}</text>
+      </view>
+    </picker>
+  </view>
+  <view class="pay-data">
+    <text>当前回款日期 2017-11-29</text>
+  </view> -->
+  <!-- <view class="pay-no-data">
+   <view>您今天没有回款数据</view>
+  <view class="pay-choose">可<text>重新删选</text>或查看<text>全部回款</text></view>
+  </view> -->
+
+</view>

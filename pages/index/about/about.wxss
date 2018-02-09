@@ -1,0 +1,39 @@
+page{
+   border-top:1rpx solid #cacbcc;
+}
+.autoLogin{
+  width:130rpx;
+  height:130rpx;
+}
+.container{
+  text-align: center;
+  padding:70rpx 0 120rpx;
+}
+.autoName{
+  font-size: 30rpx;
+  color:#333;
+  margin-top:30rpx;
+}
+.msg-list{
+  font-size:30rpx;
+  color:#333;
+  height:100rpx;
+  line-height:100rpx;
+  margin-left:30rpx;
+}
+.message{
+  background:#fff;
+}
+.msg-right{
+  float:right;
+  font-size: 30rpx;
+  color:#999999;
+  margin-right:30rpx;
+}
+.msg-line{
+  border-top:1rpx solid #e3e4e6;
+}
+.copyright{
+  background:#fff;
+  margin-top:18rpx;
+}

@@ -1,0 +1,26 @@
+<view>
+  <image src="/images/bank-banner.png" class="banner"></image>
+</view>
+<view class="safe-list">
+  <view class="safe-single">
+    <image src="/images/bank-secret.png" class="secret"></image>
+    <view class="safe-text">
+      <text>银行级加密</text>
+      <view>多重复杂加密，保障信息安全</view>
+    </view>
+  </view>
+   <view class="safe-singles">
+    <image src="/images/bank-protect.png" class="secret"></image>
+    <view class="safe-text">
+      <text>隐私保护</text>
+      <view>权限严格，保证用户和数据不外泄</view>
+    </view>
+  </view>
+   <view class="safe-singless">
+    <image src="/images/bank-manage.png" class="secret"></image>
+    <view class="safe-text">
+      <text>本地设置</text>
+      <view>内置手势密码，资产隐藏等功能</view>
+    </view>
+  </view>
+</view>

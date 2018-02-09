@@ -1,0 +1,169 @@
+<view class="container">
+  <image src="/images/modify.png" class="modify" bindtap="modified"></image>
+  <view class="interest">
+    <view class="interested">已收利息</view>
+    <view class="interestList">
+      <text class="interestNum">1108.77</text>
+      <text class="tag">一次性还本付息</text>
+    </view>
+  </view>
+  <view class="list">
+    <view class="getBack">
+      <text class="backFirst">下期回款</text>
+      <view class="backNum">10056.51</view>
+    </view>
+    <view class="getBack">
+      <text class="backFirst">下期回款日</text>
+      <view class="backNums">12月1日</view>
+    </view>
+    <view class="getBack">
+      <text class="backFirst">综合年化</text>
+      <view class="backNum">7.00%</view>
+    </view>
+  </view>
+  <view class="mark" bindtap="bindMark">
+    <image src="/images/open.png" class="{{trable?'':'trables'}}"></image>
+    <text>展开标的详情</text>
+  </view>
+</view>
+
+<view class="detail" wx:if="{{details}}">
+  <view class="leftDetail">
+    <view class="single">
+      <text class="single-data">起息日期</text>
+      <text class="single-detail">2017-10-31</text>
+    </view>
+    <view class="single">
+      <text class="single-data">投资本金</text>
+      <text class="single-detail">100000.00</text>
+    </view>
+    <view class="single">
+      <text class="single-data">标的年化</text>
+      <text class="single-detail">10.00%</text>
+    </view>
+    <view class="single">
+      <text class="single-data">投资期限</text>
+      <text class="single-detail">1月<text class="day">20天</text></text>
+    </view>
+  </view>
+  <view class="leftDetail">
+    <view class="single">
+      <text class="single-data">总奖励</text>
+      <text class="single-detail details">10</text>
+    </view>
+    <view class="single">
+      <text class="single-data">返现奖励</text>
+      <text class="single-detail">-</text>
+    </view>
+    <view class="single">
+      <text class="single-data">抵扣奖励</text>
+      <text class="single-detail">-</text>
+    </view>
+    <view class="single">
+      <text class="single-data">管理费用</text>
+      <text class="single-detail">-</text>
+    </view>
+  </view>
+</view>
+<view class="reimburse">回款明细
+  <text>（投入本金：10000）</text>
+</view>
+<view class="reimburse-list">
+  <view class="reimburse-tag">
+    <text class="top">1</text>
+    <text class="time">2017-10-18</text>
+    <image src="/images/getOrder.png" class="getOrder"  bindtap="bindImage"></image>
+    <view class="reimbure-money">
+      <view class="rei-interest">应收利息
+        <text class="rei-real">121.68</text>
+      </view>
+      <view class="rei-interest">应收本金
+        <text class="rei-real">58</text>
+      </view>
+    </view>
+  </view>
+   <view class="reimburse-tag">
+    <text class="second">2</text>
+    <text class="times">2017-10-18</text>
+    <image src="/images/green.png" class="green"  bindtap="bindImage"></image>
+    <view class="reimbure-money">
+      <view class="rei-interest">应收利息
+        <text class="rei-really">121.68</text>
+      </view>
+      <view class="rei-interest">应收本金
+        <text class="rei-really">58</text>
+      </view>
+    </view>
+    <view class="line"></view>
+  </view>
+   <view class="reimburse-tags">
+    <text class="second">3</text>
+    <text class="times">2017-10-18</text>
+    <image src="/images/brown.png" class="green" bindtap="bindImage"></image>
+    <view class="reimbure-money">
+      <view class="rei-interest">应收利息
+        <text class="rei-really">121.68</text>
+      </view>
+      <view class="rei-interest">应收本金
+        <text class="rei-really">58</text>
+      </view>
+    </view>
+     <view class="line"></view>
+  </view>
+</view>
+
+<view class="select" wx:if="{{list == 1}}">
+    <view class="select-no" bindtap="bindCancle"></view>
+    <view class="select-open">
+      <view class="select-one" bindtap="bindgets" data-text="已收">收款</view>
+      <view class="select-one" bindtap="bindget" data-text="已收">提前收款</view>
+      <view class="select-one" bindtap="overtime" data-text="逾期">逾期</view>
+      <view class="select-one" bindtap="transfer">债权转让</view>
+      <view class="select-one" bindtap="modify">修改回款明细</view>
+      <view class="select-cancle" bindtap="bindCancle">取消</view>
+    </view>
+  </view>
+
+<!-- 债权转让 -->
+ <view class="debt" wx:if="{{debt}}">
+    <view class="debt-pop"></view>
+    <view class="debt-open">
+      <view class="debt-title">债权转让</view>
+      <view class="debt-input" >
+        <input type="digit" placeholder="请输入转让金额" class="{{colors?'colorOld':'fontChange'}}" bindinput="colorChange" value="{{num}}"  maxlength="11"/>
+      </view>
+      <view class="debt-button">
+        <text class="debt-cancle" bindtap="bindCancles">取消</text>
+        <text class="debt-sure" bindtap="bindSure">确定</text>
+      </view>
+    </view>
+  </view>
+
+<!-- 修改回款明细 -->
+<view class="debts" wx:if="{{debts}}">
+    <view class="debt-pop"></view>
+    <view class="debt-open">
+      <view class="debt-title">修改回款明细</view>
+      <view class="debt-input" >
+        <text class="debt-money">本金</text>
+        <input type="digit" placeholder="请输入转让金额" class="{{colors?'colorOld':'fontChange'}}" bindinput="colorChange" value="{{num}}"  maxlength="11"/>
+      </view>
+      <view class="debt-input" >
+        <text class="debt-money">利息</text>
+        <input type="digit" placeholder="5000" class="{{colors?'colorOld':'fontChange'}}" bindinput="colorChange" value="{{num}}"  maxlength="11"/>
+      </view>
+      <view class="debt-input">
+        <text>还款时间</text>
+         <picker mode="date" value="{{date}}" start="2015-09-01" end="3027-09-01" bindchange="bindDateChange">
+            <view class="picker">
+            <input type="digit" placeholder="{{date}}" class="{{colors?'colorOld':'fontChange'}}" bindinput="colorChange" value="{{date}}"  maxlength="11"/>
+            </view>
+          </picker>
+        
+      </view>
+      <view class="debt-button">
+        <text class="debt-cancle" bindtap="bindCancles">取消</text>
+        <text class="debt-sure" bindtap="bindSure">确定</text>
+      </view>
+    </view>
+  </view>

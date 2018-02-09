@@ -1,0 +1,19 @@
+ page{
+  background:#fff;
+  border-top:1rpx solid #cacbcc;
+}
+.detail-container{
+  margin:50rpx 40rpx 0;
+}
+.detail-title{
+  font-size: 36rpx;
+  color:#333;
+}
+.detail-list{
+  font-size: 32rpx;
+  color:#666666;
+  margin-bottom:48rpx;
+}
+.detail-content{
+  margin-top:67rpx;
+} 

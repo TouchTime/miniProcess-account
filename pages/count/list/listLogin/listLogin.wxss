@@ -1,0 +1,247 @@
+.bank-title{
+  width:30rpx;
+  height:30rpx;
+  vertical-align: middle;
+  margin-right:10rpx;
+  margin-top:-4rpx;
+}
+.list-title text{
+  color:#cd9240;
+  font-size: 24rpx;
+  line-height:50rpx;
+  display: inline-block;
+}
+.list-title{
+  height:50rpx;
+  line-height:50rpx;
+  background:#f3e2c4;
+  text-align: center;
+}
+.search{
+  width:30rpx;
+  height:30rpx;
+  position:absolute;
+  left:40rpx;
+  top:36rpx;
+  z-index:9999;
+
+}
+.list-search{
+  background:#dedfe0;
+ padding:13rpx 0;
+ position: relative;
+}
+.list-search input{
+ margin:13rpx 20rpx;
+ background:#fff;
+ padding-left:50rpx;
+ font-size: 28rpx;
+ border-radius: 10rpx;
+}
+.nowday{
+ 
+  color:#666666;
+  font-size: 28rpx;
+  height:100rpx;
+  line-height:100rpx;
+  display: inline-block;
+}
+.plateform{
+  background:#fff;
+}
+.plateform-single{
+  margin-left:40rpx;
+  border-bottom:1rpx solid #e3e4e6;
+  padding:26rpx 0;
+}
+.company{
+  font-size:34rpx;
+  color:#333;
+}
+.support{
+  float:right;
+  margin-right:60rpx;
+  font-size: 22rpx;
+  color:#d4aa70;
+  display: inline-block;
+  border-radius:28rpx;
+  border:1rpx solid #d4aa70;
+  padding:8rpx 23rpx;
+}
+
+.hot{
+  font-size: 20rpx;
+  margin-bottom:15rpx;
+}
+.right-navigation{
+  position:fixed;
+  right:10rpx;
+  top:224rpx;
+  font-size: 22rpx;
+  color:#cd9240;
+  text-align: center;
+  z-index:999999;
+}
+.letter{
+  margin-bottom:5rpx;
+}
+.content{
+  background:#fff;
+}
+.content input{
+  display: inline-block;
+  color:#b2b2b2;
+  font-size: 30rpx;
+  margin-left:60rpx;
+  vertical-align: middle;
+  width:60%;
+}
+.account{
+  margin-left:30rpx;
+  border-bottom:1rpx solid #e3e4e6;
+}
+.delete{
+  width:28rpx;
+  height:33rpx;
+}
+.eye{
+  width:36rpx;
+  height:18rpx;
+  margin-left:30rpx;
+}
+.modify{
+  float:right;
+  margin-right:30rpx;
+  margin-top:32rpx;
+}
+.getName image{
+  width:30rpx;
+  height:30rpx;
+  margin-left:30rpx;
+  vertical-align: middle;
+}
+.getName text{
+  font-size: 26rpx;
+  color:#666666;
+  padding-left:20rpx;
+}
+.getName {
+  line-height:88rpx;
+  height:88rpx;
+}
+.arrow{
+  width:12rpx;
+  height:22rpx;
+  padding-left:20rpx;
+}
+.button-open{
+  color:#6e4419;
+  font-size: 34rpx;
+  text-align: center;
+  margin:30rpx 30rpx 0;
+  background:linear-gradient(#f2d6ab,#dcbd8f,#c29e6e);
+  background: -moz-linear-gradient(#f2d6ab,#dcbd8f,#c29e6e);
+  background:-webkit-linear-gradient(#f2d6ab,#dcbd8f,#c29e6e);
+  background:-o-linear-gradient(#f2d6ab,#dcbd8f,#c29e6e);
+  padding:26rpx 0;
+  border-radius: 10rpx;
+  font-weight: 500;
+}
+.change{
+  font-size: 30rpx;
+  color:#c4995e;
+  text-align: center;
+  margin-top:58rpx;
+}
+.problem{
+  position:absolute;
+  bottom:50rpx;
+  left:50%;
+  transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
+  color:#666666;
+  font-size: 28rpx;
+}
+.pop-up{
+  backdround:#f2f3f5;
+}
+.pop-title{
+  text-align: center;
+  font-size: 36rpx;
+  /* margin:50rpx 0 55rpx; */
+}
+.all-alert{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:99999;
+}
+.debt-pop{
+  height:100vh;
+  background:rgba(0,0,0,.5);
+}
+.pop-up{
+  width:610rpx;
+  /* height:300rpx; */
+  background:#f2f3f5;
+  border-radius: 10rpx;
+  position:fixed;
+  left:50%;
+  top:240rpx;
+  transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+}
+.pop-title{
+  color:#333;
+  font-size: 36rpx;
+  padding:50rpx 0;
+  text-align: center;
+}
+.pop-content image{
+  width:180rpx;
+  height:80rpx;
+}
+.pop-cancle{
+  display: inline-block;
+  width:236rpx;
+  height:80rpx;
+  line-height:80rpx;
+  color:#666;
+  background:#e3e4e6;
+  font-size: 34rpx;
+  text-align: center;
+  border-radius: 6rpx;
+}
+.pop-sure{
+  display: inline-block;
+  width:236rpx;
+  height:80rpx;
+  line-height:80rpx;
+  color:#fff;
+  background:#d4aa70;
+  font-size: 34rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  margin-left: 20rpx;
+}
+.pop-button{
+  margin:60rpx 55rpx;
+}
+.pop-content{
+  margin:0 55rpx;
+}
+.pop-content input{
+  width:290rpx;
+display:inline-block;
+font-size:28rpx;
+color:#acacae;
+/* vertical-align:middle; */
+height:76rpx;
+line-height:80rpx;
+padding-left:20rpx;
+ border:1rpx solid #ccc;
+
+}

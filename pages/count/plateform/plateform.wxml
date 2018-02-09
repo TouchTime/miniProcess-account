@@ -1,0 +1,51 @@
+<view class="container">
+  <image class="form-img" src="/images/plateform.png"></image>
+  <view class="form-title">
+    <view class="left-title">
+      <text>累计收益</text>
+      <view>168900.86</view>
+    </view>
+    <view class="left-title">
+      <text>待收收益</text>
+      <view>168900.86</view>
+    </view>
+  </view>
+</view>
+<view class="selects">
+<text class="select-title">根据筛选类型选择需要展示的列表</text>
+<view class="dieIn" bindtap="selectStatus">
+<text>待收</text>
+<image src="/images/tangle.png" class="tangle"></image>
+</view>
+</view>
+<block wx:for="{{arrays}}" wx:key="unique">
+<view class="form-card" bindtap="bindList" data-id="{{item.id}}">
+  <view class="card-title">
+    <text class="card-box">{{item.title}}<text class="tel">({{item.tel}})</text></text>
+    <view class="card-data">
+      <text class="current">活期</text>
+      <text class="auto">自动</text>
+      <text class="out">逾期</text>
+    </view>
+  </view>
+  <view class="all-card">
+    <view class="left-card">
+     <text class="card-num">{{item.yesNum}}</text>
+     <view class="yesterday">昨日收益</view>
+    </view>
+    <view class="right-card">
+      <text class="yesterday">在投总额<text class="right-num">{{item.all}}</text></text>
+      <view class="yesterday">累计收益<text class="right-num">{{item.getMoney}}</text></view>
+    </view>
+  </view>
+</view>
+</block>
+<view class="select" wx:if="{{list == 1}}">
+    <view class="select-no" bindtap="bindCancle"></view>
+    <view class="select-open">
+      <view class="select-one select-gray">选择项目状态</view>
+      <view class="select-one select-cancle" bindtap="bindget" data-text="待收">待收</view>
+      <view class="select-one" bindtap="overtime" data-text="已收">已收</view>
+      <view class="select-one" bindtap="transfer" data-text="逾期">逾期</view>
+    </view>
+  </view>

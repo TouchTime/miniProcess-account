@@ -1,0 +1,7 @@
+<view class="container">
+  <image src="/images/shouquan.png"/>
+  <view class="tips">
+   <text>你需要授权给网贷记账本小程序才可以使用哦</text>
+  </view>
+  <button bindtap="getSure">获取授权</button>
+</view>

@@ -1,0 +1,26 @@
+<view class="detail-container">
+   <view class="detail-title">P2P记账项目详情页里面的这些名词你都彻底的弄懂了吗？</view>
+   <view class="detail-content">
+    <view class="detail-list">
+    综合收益率：<text>定期所有项目（包括已经回款的项目）的加权年化收益率</text>
+    </view>
+     <view class="detail-list">
+    待收总额：<text>待收本金+待收利息+待收奖励</text>
+    </view>
+     <view class="detail-list">
+    待收本金：<text>尚未收回来的项目的本金之和</text>
+    </view>
+     <view class="detail-list">
+    待收利息：<text>尚未收回来的项目的奖励之和</text>
+    </view>
+     <view class="detail-list">
+    待收奖励：<text>尚未收回来的项目的奖励之和</text>
+    </view>
+     <view class="detail-list">
+    已收利息：<text>已经收回来的项目的利息之和</text>
+    </view>
+     <view class="detail-list">
+    已收奖励：<text>已经收回来的项目的奖励之和</text>
+    </view>
+   </view>
+</view>

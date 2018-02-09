@@ -1,0 +1,240 @@
+.form-img{
+  width:100vw;
+  height:239rpx;
+}
+.form-title{
+  display: flex;
+  direction: column;
+  position:absolute;
+  top:70rpx;
+  width:100%;
+}
+.left-title text{
+  font-size: 24rpx;
+  color:#927a58;
+}
+.left-title view{
+  color:#cea66c;
+  font-size: 46rpx;
+  margin-top:14rpx;
+}
+.left-title{
+   width:50%;
+   margin-left:54rpx;
+}
+.form-card{
+  background:#fff;
+  margin:0 15rpx 30rpx;
+  border-radius: 10rpx;
+}
+.card-data{
+  display: inline-block;
+  font-size: 22rpx;
+   float:right;
+  margin-right:20rpx;
+  clear:both;
+  margin-top:5rpx;
+}
+.card-box{
+    font-size:28rpx;
+    padding-left:20rpx;
+}
+.left-card,.right-card{
+  display: inline-block;
+}
+.card-num{
+  font-size: 50rpx;
+  color:#333;
+  margin-bottom:10rpx;
+  display: inline-block;
+}
+.yesterday{
+  font-size: 24rpx;
+  color:#999999;
+}
+.right-num{
+  color:#333;
+  font-size: 26rpx;
+  padding-left:16rpx;
+}
+.left-card{
+  width:250rpx;
+  text-align: center;
+  border-right:1rpx solid #e3e4e6
+}
+.right-card{
+  /* width:469rpx; */
+  text-align: left;
+   position:absolute;
+  left:324rpx;
+  top:20rpx; 
+}
+.card-title{
+  margin: 0 0 30rpx; 
+ padding-top:28rpx;
+}
+.all-card{
+  padding-top:30rpx;
+  padding-bottom:34rpx;
+   position:relative;
+   /* top:30rpx;   */
+}
+.right-card view{
+  margin-top:34rpx;
+}
+.card-data text{
+  margin-left:16rpx;
+}
+/* 活期 */
+.current{
+  color:#096bf3;
+  padding:6rpx 10rpx;
+  background:#a8cdff;
+  border-radius: 6rpx;
+}
+/* 自动 */
+.auto{
+  color:#b57e31;
+  padding:6rpx 10rpx;
+  background:#f2d8aa;
+  border-radius: 6rpx;
+}
+/* 逾期 */
+.out{
+  color:#ea3224;
+  padding:6rpx 10rpx;
+  background:#fbbeb3;
+  border-radius: 6rpx;
+}
+.tel{
+  padding-left:20rpx;
+}
+.tangle{
+  width:20rpx;
+  height:10rpx;
+  margin-left: 17rpx;
+}
+.select-title{
+  color:#fe0000;
+}
+.selects{
+  font-size: 28rpx;
+  text-align: center;
+  height:80rpx;
+  line-height:80rpx;
+}
+.dieIn{
+  color:#cea66c;
+  float: right;
+  margin-right:20rpx;
+}
+/* 弹窗 */
+.select-one{
+  color:#333;
+  font-size: 30rpx;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #e3e4e6;
+}
+.select-open{
+  background:#fff;
+  width:100%;
+  position:fixed;
+  bottom:0;
+
+}
+.select{
+  position:fixed;
+  top:0;
+  width:100%;
+
+}
+.select-no{
+  /* position:fixed; */
+  height:1000rpx;
+  background:rgba(0,0,0,.5);
+  /* z-index:99999; */
+}
+.select-cancle{
+  color:#d4aa70;
+  font-size: 30rpx;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+}
+.debt{
+  position:fixed;
+  top:0;
+  width:100%;
+}
+.debts{
+  position:fixed;
+  top:0;
+  width:100%;
+}
+.debt-pop{
+  height:100vh;
+  background:rgba(0,0,0,.5);
+}
+.debt-open{
+  width:610rpx;
+  /* height:300rpx; */
+  background:#fff;
+  border-radius: 10rpx;
+  position:fixed;
+  left:50%;
+  top:240rpx;
+  transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+}
+.debt-title{
+  color:#333;
+  font-size: 36rpx;
+  padding:50rpx 0;
+  text-align: center;
+}
+.debt .debt-input{
+  margin:0 56rpx;
+}
+.debt .debt-input input{
+  border:1rpx solid #d4aa70;
+  border-radius: 15rpx;
+  text-align: center;
+  padding:20rpx 0;
+  font-size: 34rpx;
+}
+.colorOld{
+  color:#b2b2b2;
+  font-size: 34rpx;
+}
+.debt-cancle{
+  display: inline-block;
+  width:236rpx;
+  height:80rpx;
+  line-height:80rpx;
+  color:#b2b2b2;
+  background:#e3e4e6;
+  font-size: 34rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.debt-sure{
+  display: inline-block;
+  width:236rpx;
+  height:80rpx;
+  line-height:80rpx;
+  color:#fff;
+  background:#d4aa70;
+  font-size: 34rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+}
+.debt-button{
+  margin:40rpx 56rpx;
+}
+.select-gray{
+  color:#999999;
+}

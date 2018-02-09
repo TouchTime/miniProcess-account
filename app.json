@@ -1,33 +1,59 @@
 {
-  "pages":[
+  "pages": [
+    "pages/count/count",
     "pages/index/index",
-    "pages/more/more",
-    "pages/index/table/table",
-    "pages/index/examine/examine",
-    "pages/more/about/about"
+    "pages/index/login/login",
+    "pages/payback/payback",
+    "pages/count/list/listLogin/account/account",
+    "pages/count/list/listLogin/account/month/month",
+    "pages/count/list/listLogin/listLogin",
+    "pages/count/plateform/monthAdd/modify/modify",
+    "pages/count/list/safety/safety",
+    "pages/count/list/search/search",
+    "pages/count/list/list",
+    "pages/count/secondLogin/secondLogin",
+    "pages/index/about/about",
+    "pages/index/feedback/feedback",
+    "pages/index/feedback/problemDetail/problemDetail",
+    "pages/index/feedback/charges/charges",
+    "pages/index/feedback/management/management",
+    "pages/index/feedback/help/help",
+    "pages/count/plateform/plateform",
+    "pages/count/plateform/current/current",
+    "pages/count/plateform/monthAdd/monthAdd",
+    "pages/count/plateform/current/modify/modify",
+    "pages/count/plateform/regular/regular",
+    "pages/count/plateform/regular/modified/modified"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#2d84f2",
-    "navigationBarTitleText": "理财计算器",
-    "navigationBarTextStyle":"white",
-    "backgroundColor":"#f5f5f7"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f2f3f5"
   },
   "tabBar": {
-    "color":"#8f8f8f",
-    "selectedColor": "#2380f4",
-    "backgroundColor":"#fafafa",
-    "list": [{
-      "pagePath":"pages/index/index",
-      "text": "理财计算",
-      "iconPath":"/images/accountOld.png",
-      "selectedIconPath":"/images/accountNew.png"
-    },
-    {
-      "pagePath": "pages/more/more",
-      "text": "更多",
-      "iconPath": "/images/moreOld.png",
-      "selectedIconPath": "/images/moreNew.png"
-    }]
+    "color": "#999999",
+    "selectedColor": "#dec79a",
+    "backgroundColor": "#373737",
+    "list": [
+      {
+        "pagePath": "pages/count/count",
+        "selectedIconPath": "/images/count-noSelect.png",
+        "iconPath": "/images/count-select.png",
+        "text": "统计"
+      },
+      {
+        "pagePath": "pages/payback/payback",
+        "selectedIconPath": "/images/received-select.png",
+        "iconPath": "/images/received-noSelect.png",
+        "text": "回款"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "/images/my-select.png",
+        "iconPath": "/images/my-noSelect.png",
+        "text": "我的"
+      }
+    ]
   }
 }

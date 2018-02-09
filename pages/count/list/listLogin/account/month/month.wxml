@@ -1,0 +1,53 @@
+<view class="item-way">
+  <picker bindchange="bindPickerChanges" value="{{indexs}}" range="{{arrays}}">
+    <text class="re-name">增长方式</text>
+    <view class="picker">
+      {{indexs}}
+      <image src="/images/arrow.png" class="right-select" />
+    </view>
+  </picker>
+</view>
+<view class="item-ways">
+  <text class="re-name">每期利率</text>
+  <view class="period">
+    <text bindtap="insert">+周期</text>
+    <text bindtap="inserts">-周期</text>
+  </view>
+</view>
+<view class="container">
+  <view class="period-list lists">
+    <view class="session-list">
+      <view class="session">
+        <text class="session-period">第1期</text>
+        <input type="digit"></input>
+        <text class="percent">%</text>
+      </view>
+       </view>
+       <view class="session-list">
+      <view class="session">
+        <text class="session-period">第2期</text>
+        <input type="digit"></input>
+        <text class="percent">%</text>
+      </view>
+   </view>
+  </view>
+
+  <view class="period-list">
+    <block wx:for="{{checkbox}}" wx:key="unique">
+      <view class="session-list">
+        <view class="session">
+          <text class="session-period">第{{id[index]}}期</text>
+          <input type="digit"></input>
+          <text class="percent">%</text>
+        </view>
+        <view class="line"></view>
+      </view>
+
+    </block>
+  </view>
+
+</view>
+  <view class="account-button">
+      <text class="save" bindtap="saveRegular">保存</text>
+      <!-- <text class="finish" bindtap="finishRegular">完成</text> -->
+    </view>

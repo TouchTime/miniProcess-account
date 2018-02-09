@@ -1,0 +1,13 @@
+<view class="login-container">
+ <view class="login-section">
+   <input type="number" placeholder='请输入手机号码' class="login-phone {{colors?'':'fontChange'}}" bindinput="colorChange"  value="{{phoneNum}}" bindblur="phoneInput"  maxlength='11'></input>
+   <text class="login-code {{loginCode?'':'loginColor'}}" bindtap='validatemobile' id="login-code">{{text}}</text>
+   <view class="cover {{hide?'hiden':''}}"></view>
+ </view>
+ <view class="login-section">
+   <input placeholder='短信验证码' class="{{font?'':'fontChange'}}" bindinput="colorChanges"  bindblur='msgInput' type="number" maxlength='6'></input>
+ </view>
+ <view class="login-btn">
+  <button bindtap='logIn'>绑定</button>
+ </view>
+</view>

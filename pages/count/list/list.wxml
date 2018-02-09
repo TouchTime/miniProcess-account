@@ -1,0 +1,33 @@
+<scroll-view scroll-y="true" scroll-into-view="{{toView}}" >
+<view class="container">
+  <view class="list-title" bindtap="safe">
+    <image src="/images/bank.png" class="bank-title"></image>
+    <text>银行加密，100%安全保障</text>
+  </view>
+  <view class="list-search">
+    <input type="text" placeholder="请输入平台名称" bindfocus="formFocus"></input>
+    <image src="/images/search.png" class="search"></image>
+  </view>
+</view>
+<!-- 右侧导航 -->
+<view class="right-navigation">
+  <view class="hot">热</view>
+  <block wx:for="{{nums}}" wx:key="unique" wx:for-item="itemName">
+    <view class="letter" bindtap="choiceWordindex" data-wordindex="{{itemName}}">{{itemName}}</view>
+  </block>
+</view>
+
+<view class="content">
+  <block wx:for="{{word}}" wx:key="unique" >
+    <view id="{{item.title}}">
+      <view class="nowday">{{item.title}}</view>
+      <view class="plateform" wx:for="{{item.array}}" wx:key="uniques">
+        <view class="plateform-single" bindtap="bindLogin" data-text="{{item.id}}">
+          <text class="company">{{item.name}}</text>
+          <text class="support">{{item.isImport}}</text>
+        </view>
+      </view>
+    </view>
+</block>
+</view>
+  </scroll-view>

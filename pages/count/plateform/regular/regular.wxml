@@ -1,0 +1,111 @@
+<view class="container">
+  <image src="/images/modify.png" class="modify" bindtap="modified"></image>
+  <view class="interest">
+    <view class="interested">昨日收益</view>
+    <view class="interestList">
+      <text class="interestNum">1108.77</text>
+      <text class="tag">每日计息每日复利</text>
+    </view>
+  </view>
+  <view class="list">
+    <view class="getBack">
+      <text class="backFirst">累计收益</text>
+      <view class="backNum">10056.51</view>
+    </view>
+    <view class="getBack">
+      <text class="backFirst">在投总额</text>
+      <view class="backNum">111111000</view>
+    </view>
+    <view class="getBack">
+      <text class="backFirst">综合年化</text>
+      <view class="backNum">7.00%</view>
+    </view>
+  </view>
+</view>
+
+<view class="reimburse">存取记录
+  <text class="principal">（投入本金：10000）</text>
+  <view class="buttons">
+    <text bindtap="increase">新增</text>
+    <text bindtap="atone">赎回</text>
+  </view>
+</view>
+<view class="reimburse-list">
+  <view class="reimburse-tag">
+    <text class="second"></text>
+    <text class="time">2017-10-18</text>
+    <text class="reimbure-moneys">
+     +1000
+    </text>
+  
+  </view>
+  <view class="reimburse-tags">
+    <text class="seconds"></text>
+    <text class="time">2017-10-18</text>
+    <text class="reimbure-money">
+     -500
+    </text>
+    <view class="line"></view>
+  </view>
+  <view class="reimburse-tags">
+     <text class="seconds"></text>
+    <text class="time">2017-10-18</text>
+    <text class="reimbure-money">
+     +1000
+    </text>
+     <view class="lines"></view>
+  </view>
+  <view class="reimburse-tags">
+     <text class="seconds"></text>
+    <text class="time">2017-10-18</text>
+    <text class="reimbure-money">
+     +1000
+    </text>
+     <view class="lines"></view>
+  </view>
+</view>
+
+
+<!--新增投资额 -->
+<view class="debt" wx:if="{{debt}}">
+  <view class="debt-pop"></view>
+  <view class="debt-open">
+    <view class="debt-title">新增投资额</view>
+    <view class="debt-input">
+      <input type="digit" placeholder="请输入金额" class="{{colors?'colorOld':'fontChange'}}" bindinput="colorChange" value="{{num}}" maxlength="11" />
+    </view>
+    <view class="debt-input debt-time">
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="3027-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          <input type="digit" placeholder="{{date}}" class="{{colors?'colorOld':'fontChange'}}" bindinput="colorChange" value="{{date}}" maxlength="11" />
+        </view>
+      </picker>
+    </view>
+    <view class="debt-button">
+      <text class="debt-cancle" bindtap="bindCancles">取消</text>
+      <text class="debt-sure" bindtap="bindSure">确定</text>
+    </view>
+  </view>
+</view>
+
+<!--赎回投资额 -->
+<view class="debt" wx:if="{{debts}}">
+  <view class="debt-pop"></view>
+  <view class="debt-open">
+    <view class="debt-title">赎回投资额</view>
+    <view class="debt-input">
+      <input type="digit" placeholder="请输入金额" class="{{colors?'colorOld':'fontChange'}}" bindinput="colorChange" value="{{num}}" maxlength="11" />
+    </view>
+    <view class="debt-input debt-time">
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="3027-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          <input type="digit" placeholder="{{date}}" class="{{colors?'colorOld':'fontChange'}}" bindinput="colorChange" value="{{date}}" maxlength="11" />
+        </view>
+      </picker>
+    </view>
+    <view class="debt-button">
+      <text class="debt-cancle" bindtap="bindCancles">取消</text>
+      <text class="debt-sure" bindtap="bindSure">确定</text>
+    </view>
+  </view>
+</view>

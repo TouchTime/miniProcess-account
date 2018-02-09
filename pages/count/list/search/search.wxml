@@ -1,0 +1,26 @@
+ <view>
+ <view class="list-search">
+    <input type="text" placeholder="请输入平台名称" bindinput="bindInput" value="{{plateform}}"></input>
+    <image src="/images/search.png" class="search"></image>
+    <image src="/images/delete.png" class="delete" wx:if="{{change}}" bindtap="deleteAll"></image>
+    <text class="cancle" bindtap="bindCancle">取消</text>
+  </view>
+  <view class="noFond">
+     <view class="no-title">对不起，暂时还没有收录该平台</view>
+     <text class="no-button" bindtap="apply">申请收录</text>
+  </view>
+  <!-- 收录平台 -->
+  <view class="debt" wx:if="{{debt}}">
+  <view class="debt-pop" bindtap="cancles"></view>
+  <view class="debt-open">
+    <view class="debt-title">申请收录</view>
+    <view class="debt-input">
+      <input type="digit" placeholder="请输入平台名称" class="{{colors?'colorOld':'fontChange'}}" bindinput="colorChange" value="{{num}}"  />
+    </view>
+    <view class="debt-button">
+      <text class="debt-cancle" bindtap="bindCancles">取消</text>
+      <text class="debt-sure" bindtap="bindSure">确定</text>
+    </view>
+  </view>
+</view>
+ </view>

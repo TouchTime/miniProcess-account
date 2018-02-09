@@ -1,0 +1,35 @@
+  <view class="current">
+    <view class="re-content {{isColors1?'bgColor':''}}" data-isColor="1"  bindtap="showColors">
+      <view class="item-name">
+        <text class="re-name">项目名称</text>
+        <view class="re-choose {{lefts?'':'left-active'}}">
+          <input type="text" placeholder='请输入项目名称' bindinput='noteProjects' value="{{phoneNumber}}" />
+          <image src="/images/delete.png" class="delete-all  {{shows?'showed':''}}" bindtap='deteleAll' />
+        </view>
+      </view>
+    </view>
+    <view class="re-content {{isColors3?'bgColor':''}}" data-isColor="3"  bindtap="showColors">
+      <view class="item-way">
+        <picker bindchange="bindPickerChanges" value="{{indexs}}" range="{{arrays}}">
+          <text class="re-name">计息方式</text>
+          <view class="picker">
+            {{indexs}}
+            <image src="/images/arrow.png" class="right-select" />
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="re-content  {{isColors4?'bgColor':''}}" data-isColor="4"  bindtap="showColors">
+      <view class="item-name">
+        <text class="re-name">年的标化</text>
+        <view class="re-years">
+          <input type="number" placeholder='例子:5' bindinput="yearStandard" />
+          <text class="percent">%</text>
+        </view>
+      </view>
+    </view>
+   <view class="account-button finish" bindtap="finishRegular">
+     完成
+    </view>
+  </view>
+    

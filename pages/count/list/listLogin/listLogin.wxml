@@ -1,0 +1,46 @@
+<view class="container">
+  <view class="list-title" bindtap="safe">
+    <image src="/images/bank.png" class="bank-title"></image>
+    <text>银行加密，密码安全控件已启用</text>
+  </view>
+</view>
+<view class="content">
+  <view class="account">
+    <view class="nowday">账号</view>
+    <input type="text" placeholder='用户名/邮箱/手机号'></input>
+  </view>
+  <view class="account">
+    <view class="nowday">密码</view>
+    <input password="true" placeholder='请输入密码'></input>
+    <view class="modify">
+      <image src="/images/delete.png" class="delete"></image>
+      <image src="/images/eye.png" class="eye"></image>
+    </view>
+  </view>
+</view>
+<view class="getName">
+  <image src="/images/choose.png" wx:if="{{one}}" bindtap="isShow"></image>
+  <image src="/images/noChoose.png" wx:else bindtap="isShow"></image>
+  <text  bindtap="isShow">同意数据解析协议</text>
+</view>
+<view class="button-open" bindtap="bindCommon">开通同步</view>
+<view class="change" bindtap="bindHand">切换至手工记账</view>
+<view class="problem">
+  <text>反馈问题</text>
+  <image src="/images/arrow.png" class="arrow"></image>
+</view>
+<!-- 弹窗 -->
+<view class="all-alert" wx:if="{{list}}">
+ <view class="debt-pop"></view>
+<view class="pop-up">
+  <view class="pop-title">图形验证码</view>
+  <view class="pop-content">
+    <input type="text" placeholder="请输入验证码"></input>
+    <image src="/images/code.jpg"></image>
+  </view>
+  <view class="pop-button">
+    <text class="pop-cancle"  bindtap="bindCancles">取消</text>
+    <text class="pop-sure"  bindtap="bindSure">确定</text>
+  </view>
+</view>
+</view>

@@ -1,0 +1,96 @@
+.bank-title{
+  width:30rpx;
+  height:30rpx;
+  vertical-align: middle;
+  margin-right:10rpx;
+  margin-top:-4rpx;
+}
+.list-title text{
+  color:#cd9240;
+  font-size: 24rpx;
+  line-height:50rpx;
+  display: inline-block;
+}
+.list-title{
+  height:50rpx;
+  line-height:50rpx;
+  background:#f3e2c4;
+  text-align: center;
+}
+.search{
+  width:30rpx;
+  height:30rpx;
+  position:absolute;
+  left:40rpx;
+  top:36rpx;
+  z-index:9999;
+
+}
+.list-search{
+  background:#dedfe0;
+ padding:13rpx 0;
+ position: relative;
+}
+.list-search input{
+ margin:13rpx 20rpx;
+ background:#fff;
+ padding-left:50rpx;
+ font-size: 28rpx;
+ border-radius: 10rpx;
+}
+.nowday{
+  padding-left:30rpx;
+  color:#656566;
+  font-size: 24rpx;
+  height:50rpx;
+  line-height:50rpx;
+}
+.plateform{
+  background:#fff;
+}
+.plateform-single{
+  margin-left:40rpx;
+  border-bottom:1rpx solid #e3e4e6;
+  padding:26rpx 0;
+}
+.company{
+  font-size:34rpx;
+  color:#333;
+}
+.support{
+  float:right;
+  margin-right:60rpx;
+  font-size: 22rpx;
+  color:#d4aa70;
+  display: inline-block;
+  border-radius:28rpx;
+  border:1rpx solid #d4aa70;
+  padding:8rpx 23rpx;
+}
+.container{
+  position:fixed;
+  width:100vw;
+}
+.content{
+  padding-top:152rpx;
+
+}
+.hot{
+  font-size: 20rpx;
+  margin-bottom:15rpx;
+}
+.right-navigation{
+  position:fixed;
+  right:10rpx;
+  top:224rpx;
+  font-size: 22rpx;
+  color:#cd9240;
+  text-align: center;
+  z-index:999999;
+}
+.letter{
+  margin-bottom:5rpx;
+}
+scroll-view{
+height:100%;
+}

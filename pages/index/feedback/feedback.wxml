@@ -1,0 +1,23 @@
+ <import src="../problem-template/problem-template.wxml" /> 
+<view class="container">
+   <view class="first-content" bindtap="p2pbind">
+      <image src="/images/p2p.png" class="feedback-logo"></image>
+      <view class="feedback-text">p2p记账</view>
+   </view>
+   <view class="first-content" bindtap="operatebind">
+      <image src="/images/operate.png" class="feedback-logo"></image>
+      <view class="feedback-text">操作帮助</view>
+   </view>
+    <view class="first-content" bindtap="managebind">
+      <image src="/images/manage.png" class="feedback-logo"></image>
+      <view class="feedback-text">账户管理</view>
+   </view>
+</view>
+<view class="hot-problem">热门问题</view>
+  <view class="problem-container">
+  <block wx:for="{{listResults}}" wx:key="unique" wx:for-item="item">  
+    <template is="problemItem" data="{{...item}}"/> 
+  </block>
+</view>
+
+

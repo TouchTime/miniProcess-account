@@ -1,0 +1,506 @@
+.mark image {
+  width: 23rpx;
+  height: 23rpx;
+  /* vertical-align:middle; */
+}
+
+.container {
+  background: #26231d;
+  color: #927a58;
+  padding-top:10rpx;
+}
+
+.modify {
+  width: 110rpx;
+  height: 48rpx;
+  float: right;
+  margin-right: 50rpx;
+  margin-top: 40rpx;
+}
+
+.list {
+  display: flex;
+  direction: row;
+  margin-top: 66rpx;
+  /* text-align: center; */
+  font-size: 24rpx;
+}
+
+.getBack {
+  width: 33%;
+}
+
+.interest {
+  padding: 88rpx 50rpx 0;
+}
+
+.interested {
+  font-size: 24rpx;
+  position: relative;
+}
+
+.interestList {
+  padding-top: 28rpx;
+}
+
+.interestNum {
+  font-size: 66rpx;
+  color: #cea66c;
+}
+
+.tag {
+  color: #cea66c;
+  font-size: 22rpx;
+  /* border: 1rpx solid #cea66c; */
+  padding: 5rpx 10rpx;
+  border-radius: 2rpx;
+  float: right;
+  margin-top: 17rpx;
+}
+
+.backNum {
+  font-size: 32rpx;
+  color: #cea66c;
+  padding-top: 20rpx;
+}
+
+.getBack {
+  padding-left: 50rpx;
+}
+
+.backNums {
+  font-size: 32rpx;
+  color: #cea66c;
+  padding-top: 16rpx;
+}
+
+.mark {
+  margin-top: 48rpx;
+  text-align: center;
+  font-size: 22rpx;
+  padding-bottom: 42rpx;
+}
+
+.mark text {
+  padding-left: 10rpx;
+}
+
+.detail {
+  background: #fff;
+  width: 100vw;
+}
+
+.leftDetail {
+  display: inline-block;
+  font-size: 26rpx;
+  width: 50%;
+  padding-top: 16rpx;
+  padding-bottom: 50rpx;
+}
+
+.single-data {
+  color: #999;
+}
+
+.single-detail {
+  color: #333;
+  padding-left: 30rpx;
+}
+
+.single {
+  padding-left: 30rpx;
+  padding-top: 32rpx;
+}
+
+.details {
+  padding-left: 44rpx;
+}
+
+.day {
+  padding-left: 36rpx;
+}
+
+.reimburse {
+  font-size: 30rpx;
+  color: #333;
+  padding-left: 30rpx;
+  height: 114rpx;
+  line-height: 114rpx;
+}
+
+.getOrder {
+  width: 99rpx;
+  height: 74rpx;
+  margin: 45rpx 58rpx 0;
+  padding-left: 210rpx;
+}
+
+.reimburse-list {
+  background: #fff;
+  /* padding-top:45rpx; */
+  padding-bottom: 48rpx;
+}
+
+.green {
+  width: 92rpx;
+  height: 40rpx;
+  margin: 45rpx 62rpx 0;
+}
+
+.reimbure-money {
+  display: inline-block;
+  /* float: right; *//* clear: both;   */
+}
+
+.reimbure-moneys {
+  font-size: 32rpx;
+  color: #cea66c;
+}
+
+.second {
+  background: #b39365;
+  border-radius: 50%;
+  border: 6rpx solid #f0e6d9;
+  width: 24rpx;
+  height: 24rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.seconds {
+  background: #b39365;
+  border-radius: 50%;
+  width: 16rpx;
+  height: 16rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.time {
+  color: #333;
+  font-size: 28rpx;
+  padding-left: 18rpx;
+  font-weight: bold;
+}
+
+.times {
+  color: #333;
+  font-size: 28rpx;
+  padding-left: 28rpx;
+}
+
+.rei-interest {
+  font-size: 24rpx;
+  color: #b2b2b2;
+}
+
+.rei-interest text {
+  font-weight: bold;
+}
+
+.rei-really {
+  color: #333;
+}
+
+.reimbure-money {
+  position: absolute;
+  right: 30rpx;
+  top: 42rpx;
+}
+
+.reimbure-moneys {
+  position: absolute;
+  right: 30rpx;
+  top: 42rpx;
+}
+
+.reimburse-tag, .reimburse-tags {
+  /* height:32rpx;
+  line-height:32rpx; */
+  position: relative;
+  padding-top: 68rpx;
+}
+
+.reimburse-tag {
+  margin-left: 30rpx;
+}
+
+.reimburse-tags {
+  margin-left: 40rpx;
+}
+
+.reimburse-tags .time {
+  font-size: 24rpx;
+  color: #666;
+  padding-left: 28rpx;
+}
+
+.rei-interest {
+  margin-top: 12rpx;
+}
+
+.rei-really, .rei-real {
+  padding-left: 12rpx;
+}
+
+.line {
+  position: absolute;
+  height: 87rpx;
+  width: 2rpx;
+  background: #e4c79e;
+  top: -2rpx;
+  left: 8rpx;
+}
+
+.lines {
+  position: absolute;
+  height: 94rpx;
+  width: 2rpx;
+  background: #e4c79e;
+  top: -11rpx;
+  left: 8rpx;
+}
+
+/* 弹窗 */
+
+.select-one {
+  color: #333;
+  font-size: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #e3e4e6;
+}
+
+.select-open {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.select {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.select-no {
+  /* position:fixed; */
+  height: 1000rpx;
+  background: rgba(0, 0, 0, 0.5);
+  /* z-index:99999; */
+}
+
+.select-cancle {
+  color: #d4aa70;
+  font-size: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.debt {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.debts {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.debt-pop {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.debt-open {
+  width: 610rpx;
+  /* height:300rpx; */
+  background: #fff;
+  border-radius: 10rpx;
+  position: fixed;
+  left: 50%;
+  top: 240rpx;
+  transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+}
+
+.debt-title {
+  color: #333;
+  font-size: 36rpx;
+  padding: 50rpx 0;
+  text-align: center;
+}
+
+.debt .debt-input {
+  margin: 0 56rpx;
+}
+
+.debt .debt-input input {
+  border: 1rpx solid #d4aa70;
+  border-radius: 15rpx;
+  text-align: center;
+  padding: 20rpx 0;
+  font-size: 34rpx;
+}
+
+.colorOld {
+  color: #b2b2b2;
+  font-size: 34rpx;
+}
+
+.debt-cancle {
+  display: inline-block;
+  width: 236rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #b2b2b2;
+  background: #e3e4e6;
+  font-size: 34rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+.debt-sure {
+  display: inline-block;
+  width: 236rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  background: #d4aa70;
+  font-size: 34rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+}
+
+.debt-button {
+  margin: 40rpx 56rpx;
+}
+
+.debts .debt-input text {
+  color: #666;
+  font-size: 32rpx;
+  line-height: 78rpx;
+  text-align: right;
+}
+
+.debts .debt-input {
+  padding-left: 60rpx;
+  height: 78rpx;
+  margin-bottom: 20rpx;
+}
+
+.debts .debt-input input {
+  border: 1rpx solid #d4aa70;
+  border-radius: 15rpx;
+  text-align: center;
+  padding: 10rpx 0;
+  font-size: 34rpx;
+  float: right;
+  margin-right: 54rpx;
+  clear: both;
+  width: 344rpx;
+}
+
+.debts input {
+  display: inline-block;
+}
+
+.debts .debt-open {
+  width: 612rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  position: fixed;
+  left: 50%;
+  top: 240rpx;
+  transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+}
+
+.debts .debt-money {
+  padding-left: 56rpx;
+}
+
+.debt-time {
+  margin-top: 20rpx !important;
+}
+
+.trables {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -moz-transform: rotate(180deg); /* Firefox */
+  -webkit-transform: rotate(180deg); /* Safari 和 Chrome */
+  -o-transform: rotate(180deg); /* Opera */
+  vertical-align: middle;
+}
+
+.buttons {
+  display: inline-block;
+  float: right;
+  margin-right: 30rpx;
+}
+
+.buttons text {
+  font-size: 32rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  width: 120rpx;
+  height: 60rpx;
+  display: inline-block;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.principal {
+  font-size: 24rpx;
+}
+
+.no-get {
+  padding-left: 84rpx !important;
+}
+
+.buttons text {
+  background: #73aa25;
+}
+
+.reimburse-list .reimburse-tags:nth-child(2) .reimbure-money {
+  color: #73aa25 !important;
+  font-size: 28rpx;
+}
+
+.reimbure-money {
+  color: #cea66c;
+  font-size: 28rpx;
+}
+
+.modify-money {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: -2rpx;
+  left: 98rpx;
+}
+
+.next-list {
+  background: #fff;
+  margin-top: 15rpx;
+}
+.interest-add{
+  color:#927a58;
+  font-size:24rpx;
+  float:right;
+   margin-top:30rpx;
+
+}
+.interestList .backNum{
+  float:right;
+  clear: both;
+  /* margin-top:-30rpx; */
+}

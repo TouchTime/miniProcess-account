@@ -1,0 +1,6 @@
+<template name="problemItem">
+  <view class="list" bindtap="binddetail" id="{{index}}">
+    <text>{{item}}</text>
+    <image src="/images/arrow.png" class="problem-right"></image>
+  </view>
+</template>

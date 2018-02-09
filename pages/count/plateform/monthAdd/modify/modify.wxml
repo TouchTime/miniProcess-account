@@ -1,0 +1,101 @@
+ <view class="regular">
+    <view class="re-content {{isColor1?'bgColor':''}}" data-isColor="1" bindtap="showColor">
+      <view class="item-name">
+        <text class="re-name">项目名称</text>
+        <view class="re-choose {{left?'':'left-active'}}">
+          <input type="text" placeholder='请输入项目名称' bindinput='noteProject' value="{{phoneNum}}" />
+          <image src="/images/delete.png" class="delete-all  {{show?'showed':''}}" bindtap='deteleAll' />
+        </view>
+      </view>
+    </view>
+    <view class="re-content {{isColor2?'bgColor':''}}" data-isColor="2"  bindtap="showColor">
+      <view class="item-money">
+        <text class="re-name">投资本金</text>
+        <view class="re-nums">
+          <input type="number" placeholder="输入实投金额（不含抵扣）" bindinput='amountChange' />
+        </view>
+      </view>
+    </view>
+  
+    <view class="re-content re-second  {{isColor4?'bgColor':''}}" data-isColor="4"  bindtap="showColor">
+      <view class="item-way">
+        <picker mode="date" value="{{date}}" start="2007-01-01" end="2020-12-31" bindchange="bindDateChange">
+          <text class="re-name">起息日期</text>
+          <view class="picker">
+            {{date}}
+            <image src="/images/arrow.png" class="right-select" />
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="re-content  {{isColor5?'bgColor':''}}" data-isColor="5"  bindtap="showColor">
+      <view class="item-name">
+        <text class="re-name">年化利率</text>
+        <view class="re-years">
+          <input type="number" placeholder='5%-7%' bindinput='yearChange' />
+          <image src="/images/arrow.png" class="right-select" />
+          <!-- <view class="tabs year-change">
+            <text class="year {{isChecks?'active':''}}" bindtap="changeDate" data-month="3">年</text>
+            <text class="month {{isChecks?'':'active'}}" bindtap="changeDate" data-month="4">月</text>
+          </view> -->
+        </view>
+      </view>
+    </view>
+   
+    <!-- <view class="account-open" bindtap="openContent" data-hi="1" wx:if="{{one}}">
+      <text>展开选填信息</text>
+      <image src="/images/open.png" />
+    </view> -->
+
+    <view class="in-optional">
+      <view class="account-message">
+        <text>以下是选填信息</text>
+      </view>
+      <view class="re-third">
+        <!-- <view class="re-content {{isColor7?'bgColor':''}}" data-isColor="7"  bindtap="showColor">
+          <view class="item-name">
+            <text class="re-name">总奖励</text>
+            <view class="re-chooses">
+              <input type="number" placeholder="选填" class="select-write" />
+              <text>%</text>
+            </view>
+          </view>
+        </view> -->
+        <view class="re-content {{isColor8?'bgColor':''}}" data-isColor="8"  bindtap="showColor">
+          <view class="item-name">
+            <text class="re-name">返现奖励</text>
+            <view class="re-chooses">
+              <input type="number" placeholder="0" class="selectNumber"/>
+               <text class="percent">元</text>
+            </view>
+          </view>
+        </view>
+        <view class="re-content {{isColor9?'bgColor':''}}" data-isColor="9"  bindtap="showColor">
+          <view class="item-money ">
+            <view class="re-name">抵扣奖励</view>
+            <view class="re-chooses">
+              <input type="number" placeholder="0"  class="selectNumber"/>
+               <text class="percent">元</text>
+            </view>
+          </view>
+        </view>
+        <view class="re-content {{isColor10?'bgColor':''}}" data-isColor="10"  bindtap="showColor">
+          <view class="item-money">
+            <view class="re-name renames">管理费用</view>
+            <view class="re-chooses">
+              <input type="number" placeholder="0" class="percents" />
+              <text class="percent">%</text>
+            </view>
+          </view>
+        </view>
+          <!-- <view class="account-close" bindtap="openContent" data-hi="2">
+            <text>收起选填信息</text>
+            <image src="/images/close.png" />
+          </view> -->
+        </view>
+    </view>
+
+    <view class="account-button finish" bindtap="finishRegular">
+     完成
+    </view>
+  </view>

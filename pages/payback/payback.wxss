@@ -1,0 +1,263 @@
+
+page{
+  background:#f2f3f5;
+   overflow-x: hiden;
+   height:100%;
+}
+.section{
+  padding-right:30rpx;
+  background:#fff;
+  height:100rpx;
+  /* width: 100%; */
+  border-top:1rpx solid #cacbcc;
+}
+.section .all-picker{
+  font-size: 28rpx;
+  color:#666666;
+  padding-right:30rpx;
+  border-right:1px solid #ca9a58;
+
+}
+.section .picker{
+  font-size:28rpx;
+  color:#ca9a58;
+  float:right;
+  line-height:100rpx;
+  /* margin-right:30rpx; */
+}
+.time{
+ padding-left:30rpx;
+}
+.pay-data{
+  color:#999999;
+  font-size:26rpx;
+  text-align: center;
+  padding:32rpx 0;
+}
+.pay-card{
+  background:#fff;
+  margin:0 20rpx;
+  border-radius: 6rpx;
+}
+.pay-firstLine{
+  padding-top:27rpx;
+
+}
+.pay-store{
+  color:#333333;
+  font-size: 28rpx;
+  padding-left:20rpx;
+  /* margin-top:33rpx; */
+}
+.pay-num{
+  color:#333333;
+  font-size: 28rpx;
+  padding-left:20rpx;
+}
+.out-data{
+  font-size: 24rpx;
+  color:#fefefe;
+  background:#73aa25;
+  padding:8rpx 0;
+  border-radius: 6rpx;
+  position:absolute;
+  right:50rpx;
+  display: inline-block;
+  width:90rpx;
+  text-align:center;
+
+}
+.in-data{
+  font-size: 24rpx;
+  color:#fefefe;
+  background:#d4aa70;
+  padding:8rpx 0;
+  border-radius: 6rpx;
+  position:absolute;
+  right:50rpx;
+  display: inline-block;
+  width:90rpx;
+  text-align:center;
+
+}
+.principal{
+  padding-right:70rpx;
+  /* border-right:1px solid #e3e4e6; */
+}
+.pay-back{
+  border-left:1px solid #e3e4e6;
+
+}
+.principal text{
+  color:#333;
+  font-size: 50rpx;
+}
+.principal view{
+  color:#999999;
+  font-size: 24rpx;
+  /* margin-top:4rpx; */
+  text-align: center;
+}
+.pay-secondLine{
+  display: flex;
+  flex-direction:row;
+  margin:40rpx 65rpx;
+  padding-bottom:42rpx;
+}
+.receive{
+  color:#999;
+  font-size: 24rpx;
+  padding-left:70rpx;
+}
+.money{
+  color:#333;
+  font-size:26rpx;
+  padding-left:20rpx;
+}
+.pay-receive{
+  margin-top:24rpx;
+}
+.pay-no-data{
+  text-align: center;
+  margin-top:180rpx;
+  color:#999999;
+  font-size:32rpx;
+}
+.pay-choose{
+  margin-top:15rpx;
+}
+.pay-choose text{
+  color:#ca9a58;
+  padding:0 14rpx;
+}
+.overdue{
+  color:#ea3224;
+  background:#fbbeb3;
+  font-size: 24rpx;
+  padding:8rpx 0;
+  border-radius: 6rpx;
+  position:absolute;
+  right:50rpx;
+  display: inline-block;
+  width:90rpx;
+  text-align:center;
+}
+.status{
+  width:99rpx;
+  height:73rpx;
+  position:absolute;
+  right:50rpx;
+}
+.select-one{
+  color:#333;
+  font-size: 30rpx;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #e3e4e6;
+}
+.select-open{
+  background:#fff;
+  width:100%;
+  position:fixed;
+  bottom:0;
+
+}
+.select{
+  position:fixed;
+  top:0;
+  width:100%;
+
+}
+.select-no{
+  /* position:fixed; */
+  height:1000rpx;
+  background:rgba(0,0,0,.5);
+  /* z-index:99999; */
+}
+.select-cancle{
+  color:#d4aa70;
+  font-size: 30rpx;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+}
+.debt{
+  position:fixed;
+  top:0;
+  width:100%;
+}
+.debt-pop{
+  height:100vh;
+  background:rgba(0,0,0,.5);
+}
+.debt-open{
+  width:610rpx;
+  /* height:300rpx; */
+  background:#fff;
+  border-radius: 10rpx;
+  position:fixed;
+  left:50%;
+  top:240rpx;
+  transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+}
+.debt-title{
+  color:#333;
+  font-size: 36rpx;
+  padding:50rpx 0;
+  text-align: center;
+}
+.debt-input{
+  margin:0 56rpx;
+}
+.debt-input input{
+  border:1rpx solid #d4aa70;
+  border-radius: 15rpx;
+  text-align: center;
+  padding:20rpx 0;
+  font-size: 34rpx;
+}
+.colorOld{
+  color:#b2b2b2;
+  font-size: 34rpx;
+}
+.debt-cancle{
+  display: inline-block;
+  width:236rpx;
+  height:80rpx;
+  line-height:80rpx;
+  color:#b2b2b2;
+  background:#e3e4e6;
+  font-size: 34rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.debt-sure{
+  display: inline-block;
+  width:236rpx;
+  height:80rpx;
+  line-height:80rpx;
+  color:#fff;
+  background:#d4aa70;
+  font-size: 34rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+}
+.debt-button{
+  margin:40rpx 56rpx;
+}
+.fontChange{
+  color:#333;
+  font-size: 40rpx;
+}
+.time-list{
+   text-align: center;
+   margin:34rpx 0;
+}
+.time-list text{
+  color:#999999;
+  font-size: 26rpx;
+}
